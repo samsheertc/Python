@@ -1,12 +1,4 @@
 
-x = 0
-
-while True:
-    # if x == 5:
-    #     break
-    print(x)
-    x += 1
-
 
 #break in Loop
 nums = [1, 2, 3, 4, 5]
@@ -45,3 +37,12 @@ while True:
         break
     print(i)
     i = i + 1
+
+
+
+x = 0
+while True:
+    # if x == 5:
+    #     break
+    print(x)
+    x += 1
