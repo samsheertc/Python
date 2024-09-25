@@ -30,3 +30,24 @@ Enter this in Terminal After Step2
 import my_module
 import sys
 print(sys.path)
+
+
+Import Modules
+import random 
+#to pull random values from a list
+random.choice(LIST)
+
+import math
+rads=math.radians(90)
+print(rads)
+print(math.sin(rads))
+
+import datetime
+import calendar
+today=datetime.date.today()
+print(today)
+print(calendar.isleap(2020))
+
+import os
+print(os.getcwd())
+print(os.__file__)
