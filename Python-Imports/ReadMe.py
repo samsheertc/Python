@@ -1,6 +1,7 @@
 #Suppose the my_module.py is moved to new location let say to "C:\Users\samsh\Desktop"
 import sys 
 print(sys.path) #Current Path the Python Looks for 
+'''
 [
 'C:\\Users\\samsh\\My Drive (samsheer.tcp@gmail.com)\\PySpark\\PycharmProjects\\PySpark_Mac',
 'C:\\Users\\samsh\\My Drive (samsheer.tcp@gmail.com)\\PySpark\\PycharmProjects',
@@ -12,16 +13,16 @@ print(sys.path) #Current Path the Python Looks for
 'C:\\Users\\samsh\\My Drive (samsheer.tcp@gmail.com)\\PySpark\\PycharmProjects\\.venv',
 'C:\\Users\\samsh\\My Drive (samsheer.tcp@gmail.com)\\PySpark\\PycharmProjects\\.venv\\lib\\site-packages'
 ]
+'''
 
-We need to add the location of my_module.py as below
-
-Option-1
+#We need to add the location of my_module.py as below
+#Option-1
 import sys
 sys.path.append('C:\\Users\\samsh\\Desktop')
 <Add Code>
 
-Option-2
-Add the location C:\Users\samsh\Desktop in  PYTHONPATH
+#Option-2
+#Add the location C:\Users\samsh\Desktop in  PYTHONPATH
 import my_module
 <Add Code>
 
