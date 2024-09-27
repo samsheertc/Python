@@ -19,18 +19,18 @@ print(dt_utcnow) #2024-09-27 00:20:57.427277+00:00
 
 
 #Conversion from One TIMEZONE to Other
-dt_utcnow = datetime.datetime.now(tz=pytz.UTC)                  #[Pull Current UTC Time]
-dt_india = dt_utcnow.astimezone(pytz.timezone('Asia/Kolkata'))  #[Convert Current UTC Time to Indian Time]
-dt_eastern = dt_utcnow.astimezone(pytz.timezone('US/Eastern'))  #[Convert Current UTC Time to Eastern Time]
-dt_central = dt_utcnow.astimezone(pytz.timezone('US/Central'))  #[Convert Current UTC Time to Central Time]
-dt_moutain = dt_utcnow.astimezone(pytz.timezone('US/Mountain')) #[Convert Current UTC Time to Mountain Time]
-dt_pacific = dt_utcnow.astimezone(pytz.timezone('US/Pacific'))  #[Convert Current UTC Time to Pacific Time]
+dt_utcnow = datetime.datetime.now(tz=pytz.UTC)                  #Current UTC Time
+dt_india = dt_utcnow.astimezone(pytz.timezone('Asia/Kolkata'))  #Current Indian Time
+dt_eastern = dt_utcnow.astimezone(pytz.timezone('US/Eastern'))  #Current Eastern Time
+dt_central = dt_utcnow.astimezone(pytz.timezone('US/Central'))  #Current Central Time
+dt_moutain = dt_utcnow.astimezone(pytz.timezone('US/Mountain')) #Current Mountain Time
+dt_pacific = dt_utcnow.astimezone(pytz.timezone('US/Pacific'))  #Current Pacific Time
 
-print(dt_india)     #2024-09-27 05:55:36.186811+05:30
-print(dt_utcnow)    #2024-09-27 00:25:36.186811+00:00
-print(dt_eastern)   #2024-09-26 20:25:36.186811-04:00
-print(dt_central)   #2024-09-26 19:25:36.186811-05:00
-print(dt_moutain)   #2024-09-26 18:25:36.186811-06:00
-print(dt_pacific)   #2024-09-26 17:25:36.186811-07:00
+print(f"Indian Time {dt_india}")       #2024-09-27 05:55:36.186811+05:30
+print(f"UTC Time {dt_utcnow}")         #2024-09-27 00:25:36.186811+00:00
+print(f"Eastern Time {dt_eastern}")    #2024-09-26 20:25:36.186811-04:00
+print(f"Central Time {dt_central}")    #2024-09-26 19:25:36.186811-05:00
+print(f"Mountain Time {dt_moutain}")   #2024-09-26 18:25:36.186811-06:00
+print(f"Pacific Time {dt_pacific}")    #2024-09-26 17:25:36.186811-07:00
 
 #----------------------------------------------------------------------------------------------------------------
