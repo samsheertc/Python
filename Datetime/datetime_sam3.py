@@ -2,10 +2,10 @@ import datetime
 import pytz
 
 ###### localize a timestmap ######
-ts = timestamp value of a location
+ts = timestamp value of a location with out TZ
 tz = timezone value of that location
 tz.localize(ts)
-timezone.localize(timestamp)
+timezone.localize(timestamp with out TZ)
 
 #eg
 dt_mtn = datetime.datetime.now()
