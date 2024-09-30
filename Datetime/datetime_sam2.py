@@ -19,7 +19,7 @@ print(dt_utcnow) #2024-09-27 00:20:57.427277+00:00
 
 
 ### Conversion from UTC to Other
-### Usage  : {Source Time with Time Zone}.astimezone.{Destination Time Zone}
+### Usage  : {Source Timestamp with Time Zone}.astimezone.{Destination Time Zone}
 
 dt_utcnow = datetime.datetime.now(tz=pytz.UTC)                     #Current UTC Time
 dt_india = dt_utcnow.astimezone(pytz.timezone('Asia/Kolkata'))     #Current Indian Time
