@@ -3,9 +3,9 @@ dt_today = datetime.datetime.today()   #today() returns current local date time 
 dt_now = datetime.datetime.now()       #now() provides an option to pass in a timezone.
 dt_utcnow = datetime.datetime.utcnow() #utcnow() provide UTC time but tzinfo is set to None
 
-print(dt_today)  #2024-09-26 20:09:20.121120
-print(dt_now)    #2024-09-26 20:09:20.121120
-print(dt_utcnow) #2024-09-27 00:09:20.121120
+print(dt_today)  #2024-09-26 20:09:20.121120 #Local Time
+print(dt_now)    #2024-09-26 20:09:20.121120 #Local Time
+print(dt_utcnow) #2024-09-27 00:09:20.121120 #UTC Time
 #----------------------------------------------------------------------------------------------------------------
 import datetime
 import pytz
