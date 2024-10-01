@@ -1,4 +1,9 @@
-#function accepts other functions as arugments or return functions as their result is called as Higher - Order Function
+'''
+A Function accepts other functions as arugments or return functions as their result is called as Higher - Order Function
+This example is similar to a MAP function.
+Here the function takes a function and an array as its arguments and run each value of that array through 
+the provided function and returns a new array of those results
+'''
 
 def square(x):
     return x * x
