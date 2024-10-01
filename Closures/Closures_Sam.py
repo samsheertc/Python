@@ -18,7 +18,7 @@ def outer_func():
         print(message)
     return inner_func
 
-my_func = outer_func()
+my_func = outer_func()    #this contains the inner function to be executed 
 print(my_func)            #<function outer_func.<locals>.inner_func at 0x000001F6062E70A0>
 print(my_func.__name__)   #inner_func
 my_func()                 #Hi
@@ -33,8 +33,8 @@ def outer_func(msg):
         print(message)
     return inner_func
 
-hi_func = outer_func('Hi')
-hello_func = outer_func('Hello')
+hi_func = outer_func('Hi')       #this contains the inner function to be executed 
+hello_func = outer_func('Hello') #this contains the inner function to be executed 
 
 hi_func()    #Hi
 hello_func() #Hello
