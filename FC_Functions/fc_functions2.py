@@ -16,5 +16,5 @@ squares = my_map(square, [1, 2, 3, 4, 5])
 cubes = my_map(cube, [1, 2, 3, 4, 5])
 
 print(squares) #[1, 4, 9, 16, 25]
-print(cubes) #[1, 8, 27, 64, 125]
+print(cubes)   #[1, 8, 27, 64, 125]
 
