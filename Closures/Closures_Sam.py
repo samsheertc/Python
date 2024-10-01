@@ -11,7 +11,7 @@ it was created even after the outer function has finished executing
 
 '''
 
-#-------------------------------------------------------------------------------------
+#eg-1
 def outer_func():
     message = 'Hi'
     def inner_func():
@@ -26,7 +26,7 @@ my_func()                 #Hi
 my_func()                 #Hi
 
 
-#-------------------------------------------------------------------------------------
+#eg-2
 def outer_func(msg):
     message = msg
     def inner_func():
@@ -36,6 +36,5 @@ def outer_func(msg):
 hi_func = outer_func('Hi')       #this contains the inner function to be executed 
 hello_func = outer_func('Hello') #this contains the inner function to be executed 
 
-hi_func()    #Hi
-hello_func() #Hello
-#-------------------------------------------------------------------------------------
+hi_func()                #Hi
+hello_func()             #Hello
