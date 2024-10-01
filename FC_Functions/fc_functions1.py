@@ -1,3 +1,5 @@
+#example of function name passed as a variable
+
 def square(x):
     return x * x
 
