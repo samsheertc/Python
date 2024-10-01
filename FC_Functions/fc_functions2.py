@@ -1,3 +1,5 @@
+#function accepts other functions as arugments or return functions as their result is called as Higher - Order Function
+
 def square(x):
     return x * x
 
@@ -11,7 +13,8 @@ def my_map(func, arg_list):
     return result
 
 squares = my_map(square, [1, 2, 3, 4, 5])
-print(squares)
-
 cubes = my_map(cube, [1, 2, 3, 4, 5])
-print(cubes)
+
+print(squares) #[1, 4, 9, 16, 25]
+print(cubes) #[1, 8, 27, 64, 125]
+
