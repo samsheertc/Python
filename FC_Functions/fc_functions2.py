@@ -1,13 +1,11 @@
 '''
 A Function accepts other functions as arugments or return functions as their result is called as Higher - Order Function
-
 The below example is similar to a MAP function and it passes an arugment as a function.
-
 Here the function takes a function and an array as its arguments and run each value of that array through 
-
 the provided function and returns a new array of those results
 '''
 
+#Function is Passed as a parameter
 def square(x):
     return x * x
 
