@@ -1,3 +1,6 @@
+#Function is returning another function
+
+#eg-1
 # Here the logger function returns function "log_message "
 def logger(msg):
     def log_message():
@@ -8,8 +11,8 @@ log_hi()    #Log: Hi!
 
 
 
-
-
+#eg-2
+# Here the html_tag function returns function "wrap_text "
 def html_tag(tag):
     def wrap_text(msg):
         print('<{0}>{1}</{0}>'.format(tag, msg))
