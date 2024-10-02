@@ -29,3 +29,17 @@ cources = ['History', 'Math', 'Physics', 'CompSci']
 cources2 = ['Art', 'Education']
 cources.extend(cources2)
 print(cources)  #['History', 'Math', 'Physics', 'CompSci', 'Art', 'Education']
+
+#remove
+cources = ['History', 'Math', 'Physics', 'CompSci']
+cources.remove('Math')
+print(cources)   #['History', 'Physics', 'CompSci']
+
+popped = cources.pop()
+print(popped)  #CompSci
+print(cources) #['History', 'Math', 'Physics']
+
+#reverse
+cources = ['History', 'Math', 'Physics', 'CompSci']
+cources.reverse()
+print(cources) #['CompSci', 'Physics', 'Math', 'History']
