@@ -1,7 +1,6 @@
 #first_module.py
 def main():
     print("First Module's Name: {}".format(__name__))
-
 if __name__ == '__main__':
     main()
 
@@ -17,12 +16,11 @@ print("Second Module's Name: {}".format(__name__))
 
 
 
-first_module.py
-print("This will always be run")
 
+#first_module.py
+print("This will always be run")
 def main():
 print("First Module's Main Method")
-
 if __name__ == '__main__':
     main()
     
