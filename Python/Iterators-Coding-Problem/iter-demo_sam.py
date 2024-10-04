@@ -34,3 +34,10 @@ print(next(my_sentance))
 print(next(my_sentance))
 print(next(my_sentance))
 print(next(my_sentance))
+
+
+# This should have the following output:
+# This
+# is
+# a
+# test
