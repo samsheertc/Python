@@ -1,14 +1,12 @@
 #Python OOP Tutorial 3: classmethods and staticmethods
 #https://www.youtube.com/watch?v=rq8cL2XMM5M&t=314s
 
-
-#Regular Method accept instance as first parameter by default. By Convention the argument is self
-
-#Class Method accept class as the first parameter by default. By Convention the argument is cls
-
-#@classmethod decorator is used to convert regular method to class method
-
-#Static method. This doesnt pass anything automatically
+'''
+Regular Method accept instance as first parameter by default. By Convention the argument is self
+Class Method accept class as the first parameter by default. By Convention the argument is cls
+@classmethod decorator is used to convert regular method to class method
+@staticmethod decorator is used to add a Static method. This doesnt pass anything automatically
+'''
 
 class Employee:
     num_of_emps = 0
