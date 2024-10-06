@@ -34,6 +34,7 @@ print(dev_2.email) #Test.User@email.com
 
 
 #Do Option-2 and then follow below steps
+#Use Developer Class
 print(dev_1.pay)     #50000 
 dev_1.apply_raise()
 print(dev_1.pay)     #52000  [when raise_amount = 1.04 defined as Employee class Variable and nothing added under Developer Class]
@@ -42,9 +43,8 @@ print(dev_1.pay)     #50000
 dev_1.apply_raise()
 print(dev_1.pay)     #55000 [when raise_amount = 1.10 under Developer class]
 
-
-
 #Do Option-1 then follow below
+#Use Employee Class
 print(dev_1.pay)     #50000
 dev_1.apply_raise()
 print(dev_1.pay)     #52000 [when raise_amount = 1.04 as Employee class variable + raise_amount = 1.10 under Developer class]
