@@ -1,6 +1,15 @@
 #Python OOP Tutorial 2: Class Variables
 #https://www.youtube.com/watch?v=BJ-VvGyQxho
 
+'''
+#Notes
+For Class Variable we can use as self.Variable or ClassName.Variable
+ClassName.raise_amount make some sense as we can have Common Level of raise_amount across Organization
+self.raise_amount make some sense as we can have different level of raise between employees
+ClassName.num_of_emps make sense as the total employees under the company
+self.num_of_emps doesnt make any sense here
+'''
+
 class Employee:
     num_of_emps = 0     #Class Variable1
     raise_amount = 1.04 #Class Variable2
@@ -55,10 +64,3 @@ print(Employee.__dict__)     #{'__module__': '__main__', 'raise_amount': 1.04, '
 print(emp_1.__dict__)        #{'first': 'Corey', 'last': 'Schafer', 'pay': 52000, 'email': 'Corey.Schafer@company.com', 'raise_amount': 1.05}
 print(emp_2.__dict__)        #{'first': 'Test', 'last': 'User', 'pay': '60000', 'email': 'Test.User@company.com'}
 
-#Notes
-For Class Variable we can use as self.Variable or ClassName.Variable
-ClassName.raise_amount make some sense as we can have Common Level of raise_amount across Organization
-self.raise_amount make some sense as we can have different level of raise between employees
-
-ClassName.num_of_emps make sense as the total employees under the company
-self.num_of_emps doesnt make any sense here
