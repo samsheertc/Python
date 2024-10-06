@@ -8,7 +8,6 @@ print(sentence)
 sentence = 'My name is {0} and I am {1} years old.'.format(person['name'], person['age'])
 print(sentence)
 
-
 tag = 'h1'
 text = 'This is a headline'
 sentence = '<{0}>{1}</{0}>'.format(tag, text)
@@ -21,7 +20,6 @@ sentence = 'My name is {0[name]} and I am {1[age]} years old.'.format(person, pe
 sentence = 'My name is {0[name]} and I am {0[age]} years old.'.format(person)
 sentence = 'My name is {0[0]} and I am {0[1]} years old.'.format(l)
 print(sentence)
-
 
 class Person():
     def __init__(self, name, age):
@@ -48,10 +46,8 @@ pi = 3.14159265
 sentence = 'Pi is equal to {:.2f}'.format(pi)
 print(sentence)
 
-
 sentence = '1 MB is equal to {:,.2f} bytes'.format(1000**2)
 print(sentence)
-
 
 import datetime
 my_date = datetime.datetime(2016, 9, 24, 12, 30, 45)
@@ -59,7 +55,6 @@ print(my_date)
 # March 01, 2016
 sentence = '{:%B %d, %Y}'.format(my_date)
 print(sentence)
-
 
 # March 01, 2016 fell on a Tuesday and was the 061 day of the year.
 sentence = '{:%B %d, %Y} fell on a {:%A} and was the {:%j} day of the year'.format(my_date,my_date,my_date)
