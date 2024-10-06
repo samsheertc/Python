@@ -30,7 +30,6 @@ p1 = Person('Jack', '33')
 sentence = 'My name is {0.name} and I am {0.age} years old.'.format(p1)
 print(sentence)
 
-
 sentence = 'My name is {name} and I am {age} years old.'.format(name='Jenn', age='30')
 print(sentence)
 
@@ -40,7 +39,6 @@ print(sentence)
 for i in range(1, 11):
     sentence = 'The value is {:02}'.format(i)
     print(sentence)
-
 
 pi = 3.14159265
 sentence = 'Pi is equal to {:.2f}'.format(pi)
