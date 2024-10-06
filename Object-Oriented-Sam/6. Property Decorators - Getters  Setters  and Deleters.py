@@ -24,14 +24,12 @@ print(emp_1.last)       #Smith
 print(emp_1.email)      #John.Smith@email.com  [Email IS NOT changed ]
 print(emp_1.fullname()) #Jim Smith             [Full name has changed ]
 ####################################################################################################################################################
+
 '''
-
-So let say if we need to change the email automatically similar to FullName then we need to define a method for email like fullname()
-
+So let say if we need to change the email automatically similar to FullName 
+then we need to define a method for email like fullname()
 Below Code has added a method email()
-
 But the code which uses email attribute has to be changed to email() method as shown below
-        
 '''
 
 class Employee:
@@ -99,13 +97,9 @@ print(emp_1.fullname)      #Jim Smith              [No need to access as method 
 ####################################################################################################################################################
 '''
 In the above example if we change the value of propery method we will get ERROR
-
 Let say we are changing the fullname. 
-
 This will cause an error and to fix that see the code below
-
 emp_1.fullname = 'Corey Schafer' ************AttributeError: can't set attribute 'fullname' *********
-
 '''
 
 class Employee:
