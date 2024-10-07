@@ -74,7 +74,7 @@ with open("test.txt", "r") as f:
 	f_contents = f.read(size_to_read)
 	print(f.tell())
 
-	#seek to move to certain position
+	#seek option to move to certain position
 	size_to_read = 10
 	f_contents = f.read(size_to_read)
 	print(f_contents, end = '')
