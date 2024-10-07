@@ -26,7 +26,7 @@ with open("test.txt", "r") as f:
 	f_contents = f.readlines()
 	print(f_contents)
 
-    #Read One Line at a time
+        #Read One Line at a time
 	#With the extra lines:
 	f_contents = f.readline()
 	print(f_contents)
@@ -38,8 +38,7 @@ with open("test.txt", "r") as f:
 	print(f_contents, end = '')
 	f_contents = f.readline()
 	print(f_contents, end = '')
-
-
+	
 	#Iterating through the file:
 	for line in f:
 		print(line, end = '')
