@@ -17,7 +17,6 @@ print(f.closed)
 print(f.read()) #Error
 
 with open("test.txt", "r") as f:
-	
 	# Small Files:
 	f_contents = f.read()
 	print(f_contents)
@@ -47,18 +46,13 @@ with open("test.txt", "r") as f:
 	f_contents = f.read()
 	print(f_contents, end = '')
 
-	#Print first 100 characters
+	#Print first 100 characters in 3 steps
 	f_contents = f.read(100)
 	print(f_contents, end = '')
-
-	# Print next 100 characters
 	f_contents = f.read(100)
 	print(f_contents, end = '')
-
-	# Print next 100 characters
 	f_contents = f.read(100)
 	print(f_contents, end = '')
-
 
 	#Iterating through small chunks:
 	size_to_read = 100
@@ -67,7 +61,9 @@ with open("test.txt", "r") as f:
 		print(f_contents,end='')
 		f_contents = f.read(size_to_read)
 
-	# size_to_read = 10
+	
+	#Iterating through small chunks, with 10 characters:
+	size_to_read = 10
 	f_contents = f.read(size_to_read)
 	while len(f_contents) > 0:
 		print(f_contents, end = '*')
@@ -78,7 +74,7 @@ with open("test.txt", "r") as f:
 	f_contents = f.read(size_to_read)
 	print(f.tell())
 
-	##Iterating through small chunks, with 10 characters:
+	#seek to move to certain position
 	size_to_read = 10
 	f_contents = f.read(size_to_read)
 	print(f_contents, end = '')
