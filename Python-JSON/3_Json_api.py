@@ -20,12 +20,13 @@ from urllib.request import urlopen
 with urlopen("https://finance.yahoo.com/webservice/v1/symbols/allcurrencies/quote?format=json') as response:
     source = response.read()
 
-print(source)
-data = json.loads(source)
+print(source)                      #Print as a String
+data = json.loads(source)          #Convert to Python Object
+print(json.dumps(data, indent=2))  #Dump as String
+
 '''
 
 import json
-from urllib.request import urlopen
 with open('currency.json') as f:
     data = json.load(f)
 
