@@ -1,7 +1,8 @@
 ''' JavaScript Object Notation '''
 
 '''
-conversion logic of string to json
+conversion logic of string to python object
+JSON             PYTHON
 {object}      -> dictionary
 [array]       -> list
 string        -> str
@@ -10,6 +11,13 @@ number(real)  ->float
 true          ->True
 false         ->False
 null          -> None
+'''
+
+'''
+Almost Looks like a Python Dictionary
+Key= people
+value = Array of objects
+Each object is a dictionary with a Key of name, phone, email and has_license
 '''
 
 import json
@@ -42,7 +50,7 @@ print(type(data))           #<class 'dict'>
 print(type(data['people'])) #<class 'list'>
 
 for person in data['people']:
-    print(type(person))
+    print(type(person))    #<class 'dict'>
     print(person['name'])
 
 #Convert Python Object to JSON
@@ -50,8 +58,7 @@ for person in data['people']:
 for person in data['people']:
     del person['phone']
 
-#Phone Number is got deleted
-print(data)
+print(data) #Phone Number is got deleted
 
 #Dump the converted string to JSON
 new_string = json.dumps(data, indent=2, sort_keys=True)
