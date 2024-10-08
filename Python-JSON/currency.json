@@ -11,9 +11,9 @@
 					"classname": "Quote",
 					"fields": {
 						"name" : "USD/AED",
-						"price": "6.623",
+						"price": "3.6720059632707",
 						"symbol": "CNY=X",
-						"ts": "3.6720059632707",
+						"ts": "1510891120",
 						"type": "currency",
 						"utctime": "2024-10-08 03:21:27.307921",
 						"volume": "0"
@@ -27,7 +27,7 @@
 						"name" : "USD/INR",
 						"price": "84.000294379433",
 						"symbol": "CNY=X",
-						"ts": "12345676788",
+						"ts": "1510891121",
 						"type": "currency",
 						"utctime": "2024-10-08 03:21:27.307921",
 						"volume": "0"
@@ -41,7 +41,7 @@
 						"name" : "USD/EUR",
 						"price": "0.91107462978032",
 						"symbol": "CNY=X",
-						"ts": "12345676788",
+						"ts": "1510891122",
 						"type": "currency",
 						"utctime": "2024-10-08 03:21:27.307921",
 						"volume": "0"
