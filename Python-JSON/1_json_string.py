@@ -1,6 +1,18 @@
 ''' JavaScript Object Notation '''
-import json
 
+'''
+conversion logic of string to json
+{object}      -> dictionary
+[array]       -> list
+string        -> str
+number(int)   -> int
+number(real)  ->float
+true          ->True
+false         ->False
+null          -> None
+'''
+
+import json
 people_string = '''
 {
 	"people": [
@@ -33,7 +45,6 @@ for person in data['people']:
     print(type(person))
     print(person['name'])
 
-
 #Convert Python Object to JSON
 #Delete the phone tag and create a new JSON
 for person in data['people']:
@@ -42,18 +53,6 @@ for person in data['people']:
 #Phone Number is got deleted
 print(data)
 
-#Dumpp the converted string to JSON
+#Dump the converted string to JSON
 new_string = json.dumps(data, indent=2, sort_keys=True)
 print(new_string)
-
-'''
-conversion logic of string to json
-{object}      -> dictionary
-[array]       -> list
-string        -> str
-number(int)   -> int
-number(real)  ->float
-true          ->True
-false         ->False
-null          -> None
-'''
