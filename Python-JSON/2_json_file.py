@@ -4,6 +4,11 @@ import json
 with open('states.json') as f:
 	data = json.load(f)
 
+#This also works instead of with open
+data = json.load(open('states.json'))
+print(data)
+
+
 print(type(data))                            #<class 'dict'>
 print(type(data['states']))                  #<class 'list'>
 print(type(data['states'][0]))               #<class 'dict'>
@@ -20,9 +25,7 @@ for state in data['states']:
 
 
 #Modify Python objects and load back to JSON file
-
 import json
-
 with open('states.json') as f:
 	data = json.load(f)
 
@@ -36,7 +39,4 @@ with open('new_states.json', 'w') as f:
 
 
 
-#This also works instead of with open
-data = json.load(open('states.json'))
-print(data)
 
