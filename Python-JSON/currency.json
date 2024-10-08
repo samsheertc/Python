@@ -1,0 +1,53 @@
+{
+	"list": {
+		"meta": {
+			"type": "resource_list",
+			"start": 0,
+			"count": 188
+		},
+		"resources": [
+			{
+				"resource": {
+					"classname": "Quote",
+					"fields": {
+						"name" : "USD/AED",
+						"price": "6.623",
+						"symbol": "CNY=X",
+						"ts": "3.6720059632707",
+						"type": "currency",
+						"utctime": "2024-10-08 03:21:27.307921",
+						"volume": "0"
+					}
+				}
+			},
+			{
+				"resource": {
+					"classname": "Quote",
+					"fields": {
+						"name" : "USD/INR",
+						"price": "84.000294379433",
+						"symbol": "CNY=X",
+						"ts": "12345676788",
+						"type": "currency",
+						"utctime": "2024-10-08 03:21:27.307921",
+						"volume": "0"
+					}
+				}
+			},
+			{
+				"resource": {
+					"classname": "Quote",
+					"fields": {
+						"name" : "USD/EUR",
+						"price": "0.91107462978032",
+						"symbol": "CNY=X",
+						"ts": "12345676788",
+						"type": "currency",
+						"utctime": "2024-10-08 03:21:27.307921",
+						"volume": "0"
+					}
+				}
+			}
+		]
+	}
+}
