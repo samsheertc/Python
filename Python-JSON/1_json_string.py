@@ -11,12 +11,10 @@ number(real)  ->float
 true          ->True
 false         ->False
 null          -> None
-'''
 
-'''
-Almost Looks like a Python Dictionary
-Key= people
-value = Array of objects
+Below String almost Looks like a Python Dictionary
+Key = people
+Value = Array of objects
 Each object is a dictionary with a Key of name, phone, email and has_license
 '''
 
