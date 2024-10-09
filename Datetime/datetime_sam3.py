@@ -13,7 +13,6 @@ dt_mtn = datetime.datetime.now()
 mtn_tz = pytz.timezone('US/Mountain')
 dt_mtn = mtn_tz.localize(dt_mtn)
 
-
 #Convert From Mountain time to Eastern
 print(dt_mtn)
 dt_east = dt_mtn.astimezone(pytz.timezone('US/Eastern'))
