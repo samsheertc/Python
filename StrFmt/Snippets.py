@@ -1,3 +1,5 @@
+#Created for Quick Reference Purpose
+
 lis = ['Samsheer', 39]
 person = {'name': 'Jenn', 'age': 23}
 
