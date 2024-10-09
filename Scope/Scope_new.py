@@ -12,7 +12,7 @@ def test():
     print(x) #local x
 test()
 print(x)
-#print(y)
+print(y) #Error
 
 
 import builtins
