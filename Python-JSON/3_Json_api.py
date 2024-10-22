@@ -34,7 +34,7 @@ currency_rate = json.dumps(data, indent=2)
 print(currency_rate)
 print(len(data['list']['resources'])) #188
 
-usd_rates =dict()
+usd_rates = dict()
 for item in data['list']['resources']:
     name = item['resource']['fields']['name']
     price = item['resource']['fields']['price']
