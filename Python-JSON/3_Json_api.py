@@ -17,7 +17,7 @@ https://www.floatrates.com/json-feeds.html
 import json
 from urllib.request import urlopen
 
-with urlopen("https://finance.yahoo.com/webservice/v1/symbols/allcurrencies/quote?format=json') as response:
+with urlopen("https://finance.yahoo.com/webservice/v1/symbols/allcurrencies/quote?format=json") as response:
     source = response.read()
 
 print(source)                      #Print as a String
@@ -34,10 +34,10 @@ currency_rate = json.dumps(data, indent=2)
 print(currency_rate)
 print(len(data['list']['resources'])) #188
 
-usd_rates =dict()
+usd_rates = dict()
 for item in data['list']['resources']:
     name = item['resource']['fields']['name']
     price = item['resource']['fields']['price']
     usd_rates[name] = price
 
-print(50* float(usd_rates['USD/EUR']))
+print(50 * float(usd_rates['USD/INR']))
