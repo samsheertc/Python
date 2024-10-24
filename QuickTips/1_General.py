@@ -1,3 +1,4 @@
+#-------------------------------------------------
 #Normal if 
 condition = False
 if condition:
@@ -11,7 +12,7 @@ condition = True
 x = 1 if condition else 0
 print(x)
 
-
+#-------------------------------------------------
 #Underscore Placeholders
 num1 = 10000000000
 num2 = 100000000
@@ -23,7 +24,7 @@ num2 = 100_000_000
 total = num1 + num2
 print(f'{total:,}')
 
-
+#-------------------------------------------------
 #Context Managers
 f = open('test.txt', 'r')
 file_contents = f.read()
@@ -35,8 +36,7 @@ with open('test.txt', 'r') as f:
 words = file_contents.split(' ')
 word_count = len(words)
 print(word_count)
-
-
+#-------------------------------------------------
 #Enumerate
 names = ['Corey', 'Chris', 'Dave', 'Travis']
 index = 0
@@ -46,9 +46,7 @@ for name in names:
 
 for index, name in enumerate(names, start=1):
     print(index, name)
-
-
-
+#-------------------------------------------------
 #Zip
 names = ['Peter Parker', 'Clark Kent', 'Wade Wilson', 'Bruce Wayne']
 heroes =  ['Spiderman', 'Superman', 'Deadpool', 'Batman']
@@ -66,3 +64,4 @@ for name, hero, universe in zip(names, heroes, universes):
 
 for value in zip(names, heroes, universes):
     print(value)
+#-------------------------------------------------
