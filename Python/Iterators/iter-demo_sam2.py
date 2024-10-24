@@ -66,3 +66,17 @@ your computer would just run out of memory but you could use an iterator to loop
 at a time and it might take some time until you find a result but your program wouldn't take up all of your computer's
 memory and it wouldn't crash 
 
+Recap
+20:37
+so what does it mean for something to be iterable 
+so broadly speaking it means that it can be looped over but more specifically it means that
+the object needs to return an iterator object from its dunder iter method and the 
+iterator that is returned from dunder iter must define a dunder next method which accesses elements in the container one at a time
+So just because something is iterable doesn't mean that it is an iterator 
+
+                     and again 
+21:04
+what does it mean for something to be an iterator? That means that it's an object with a state
+so that it remembers where it's at during its iteration and it knows how to
+fetch its next value using the dunder next method and when it doesn't have an next value then it raises a stop iteration exception 
+
