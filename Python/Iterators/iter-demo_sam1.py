@@ -15,7 +15,8 @@ for num in nums:
 
 If something is Iterable it needs to have a special method called a dunder method called __iter__()
 
-Iterator is an object with a state so that it remembers where it is during iteration.
+Iterator is an object with a state so that it remembers where it is at during its iteration and it knows how to fetch its next value using dundet next method
+
 For Iterator it should have __iter__() and __next__() methods by default 
 
 #Check the method avaiable for a List
