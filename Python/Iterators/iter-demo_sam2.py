@@ -41,16 +41,8 @@ print(next(nums))
 
 Generators are iterators as well but the dunder __iter__ and dunder __next__ methods are created automatically
 
-Iterators can go for ever
-
 As long as there is a next function it will go for ever 
 
-
-
-Iterators can go for ever but it still only fetches one value at a time
-This really comes very handy when writing memotry efficient programs
-some times there are so many values that you just couldnt hold them all in memory if you were to put them in a list or tuple 
-but if you simply use an iterator then you can loop over one value at a time until its exhausted or just let it keep going 
 #Generator for Infinite Number Generation
 def my_range(start):
     current = start
@@ -62,24 +54,15 @@ nums = my_range(1)
 for num in nums:
     print(num)
 	
-	
-Iterator can go on forever but it still only fetches one value at a time 
+Iterators can go on for ever but it still only fetches one value at a time 
+This really comes in handy when writing memory efficient programs because sometimes there are so many values that you just couldnt hold them all in memory 
+if you were to put them in a list or tuple 
 
-now this really comes in handy when writing memory efficient programs because sometimes there are so many values that you just couldn't hold
-
-them all in memory if you were to put them in a list or a tuple 
-
-but if you simply use an iterator then you can loop over one value at a time until it's exhausted or just let it keep going so
-
+But if you simply use an iterator then you can loop over one value at a time until it's exhausted or just let it keep going so
 for example let's say that you were writing a password cracker and wanted to brute-force it by checking all of the
-
 possible password using a certain group of characters 
-
 Well there would be so many different possible passwords that you couldn't possibly hold them all in a single list
-
 your computer would just run out of memory but you could use an iterator to loop through all those possibilities one
-
 at a time and it might take some time until you find a result but your program wouldn't take up all of your computer's
-
 memory and it wouldn't crash 
 
