@@ -13,7 +13,8 @@ for num in nums:
 	print(num)
 
 
-If something is Iterable it needs to have a special method called a dunder method called __iter__()
+If something is Iterable then it needs to have a special method called a dunder method called __iter__()
+
 
 Iterator is an object with a state so that it remembers where it is at during its iteration and it knows how to fetch its next value using dundet next method
 
