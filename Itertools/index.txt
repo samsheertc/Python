@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 count - 1:19
 zip_longest - 6:48
 cycle - 9:17
@@ -34,3 +35,41 @@ result = itertools.takewhile(lt_2, numbers)
 result = itertools.accumulate(numbers, operator.mul)
 person_group = itertools.groupby(people, get_state)
 copy1, copy2 = itertools.tee(person_group)
+=======
+count - 1:19
+zip_longest - 6:48
+cycle - 9:17
+repeat - 11:09
+starmap - 14:06
+combinations - 15:34
+permutations - 15:34
+product - 19:45
+chain - 21:40
+islice - 23:37
+compress - 28:50
+filterfalse - 31:49
+dropwhile - 32:24
+takewhile - 32:24
+accumulate - 34:54
+groupby - 37:04
+tee - 43:28
+
+counter = itertools.count(start=5, step=-2.5)
+daily_data = list(itertools.zip_longest(range(10), data))
+Switch = itertools.cycle(('ON', 'OFF'))
+counter = itertools.repeat(2, times=3)
+squares = itertools.starmap(pow,[ (1,2), (2,3), (4,5), (5,6)])
+result = itertools.combinations(letters, 2)
+result = itertools.combinations_with_replacement(numbers, 4)
+result = itertools.permutations(letters, 2)
+result = itertools.product(numbers, repeat=4)
+combined = itertools.chain(letters, numbers,  names)
+result = itertools.islice(range(10),1, 5, 2)
+result = itertools.compress(letters, selectors)
+result = itertools.filterfalse(lt_2, numbers)
+result = itertools.dropwhile(lt_2, numbers)
+result = itertools.takewhile(lt_2, numbers)
+result = itertools.accumulate(numbers, operator.mul)
+person_group = itertools.groupby(people, get_state)
+copy1, copy2 = itertools.tee(person_group)
+>>>>>>> 87e390981e167a40bc02a1c652c87ed108d68f60

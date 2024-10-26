@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import itertools
 
 letters = ['a', 'b', 'c', 'd']
@@ -60,4 +61,68 @@ result = itertools.combinations_with_replacement(numbers, 4)
 (2, 2, 3, 3)
 (2, 3, 3, 3)
 (3, 3, 3, 3)
+=======
+import itertools
+
+letters = ['a', 'b', 'c', 'd']
+numbers = [0, 1, 2, 3]
+names = ['Corey', 'Nicole']
+
+result = itertools.combinations(letters, 2)
+
+print(result)  #<itertools.combinations object at 0x000002306FACE610>
+
+
+for item in result:
+    print(item)
+
+'''
+('a', 'b')
+('a', 'c')
+('a', 'd')
+('b', 'c')
+('b', 'd')
+('c', 'd')
+'''
+
+
+result = itertools.combinations_with_replacement(numbers, 4)
+
+'''
+(0, 0, 0, 0)
+(0, 0, 0, 1)
+(0, 0, 0, 2)
+(0, 0, 0, 3)
+(0, 0, 1, 1)
+(0, 0, 1, 2)
+(0, 0, 1, 3)
+(0, 0, 2, 2)
+(0, 0, 2, 3)
+(0, 0, 3, 3)
+(0, 1, 1, 1)
+(0, 1, 1, 2)
+(0, 1, 1, 3)
+(0, 1, 2, 2)
+(0, 1, 2, 3)
+(0, 1, 3, 3)
+(0, 2, 2, 2)
+(0, 2, 2, 3)
+(0, 2, 3, 3)
+(0, 3, 3, 3)
+(1, 1, 1, 1)
+(1, 1, 1, 2)
+(1, 1, 1, 3)
+(1, 1, 2, 2)
+(1, 1, 2, 3)
+(1, 1, 3, 3)
+(1, 2, 2, 2)
+(1, 2, 2, 3)
+(1, 2, 3, 3)
+(1, 3, 3, 3)
+(2, 2, 2, 2)
+(2, 2, 2, 3)
+(2, 2, 3, 3)
+(2, 3, 3, 3)
+(3, 3, 3, 3)
+>>>>>>> 87e390981e167a40bc02a1c652c87ed108d68f60
 '''
