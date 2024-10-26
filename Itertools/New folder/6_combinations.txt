@@ -1,0 +1,22 @@
+import itertools
+
+letters = ['a', 'b', 'c', 'd']
+numbers = [0, 1, 2, 3]
+names = ['Corey', 'Nicole']
+
+result = itertools.combinations(letters, 2)
+
+for item in result:
+    print(item)
+
+'''
+('a', 'b')
+('a', 'c')
+('a', 'd')
+('b', 'c')
+('b', 'd')
+('c', 'd')
+'''
+
+
+result = itertools.combinations_with_replacement(numbers, 4)

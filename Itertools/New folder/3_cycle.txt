@@ -1,0 +1,22 @@
+import itertools
+
+counter = itertools.cycle([1,2,3])
+
+print(next(counter)) #1
+print(next(counter)) #2
+print(next(counter)) #3
+print(next(counter)) #1
+print(next(counter)) #2
+print(next(counter)) #3
+
+
+counter = itertools.cycle(('ON', 'OFF'))
+
+print(next(counter)) #ON
+print(next(counter)) #OFF
+print(next(counter)) #ON
+print(next(counter)) #OFF
+
+
+
+#note : cycle is an infinite iterator

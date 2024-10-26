@@ -1,0 +1,46 @@
+import itertools
+
+counter = itertools.repeat(2)
+
+print(dir(counter))  #__iter__ and __next__
+
+print(next(counter)) #2
+print(next(counter)) #2
+print(next(counter)) #2
+print(next(counter)) #2
+print(next(counter)) #2
+print(next(counter)) #2
+
+
+
+counter = itertools.repeat(2, times=3)
+
+print(next(counter)) #2
+print(next(counter)) #2
+print(next(counter)) #2
+print(next(counter)) #error
+print(next(counter)) #error
+print(next(counter)) #error
+
+
+#No Error
+for num in itertools.repeat(2, times=3):
+	print(num)
+
+
+
+
+
+#real life eg:
+
+import itertools
+
+squares = map(pow, range(10), itertools.repeat(2))
+squares_new = map(pow, range(10), itertools.repeat(2, times=3))
+
+
+print(list(squares))     #[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+print(list(squares_new)) #[0, 1, 4]
+
+
+#note : repeat is an infinite iterator
