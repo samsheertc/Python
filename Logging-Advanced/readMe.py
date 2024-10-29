@@ -1,3 +1,5 @@
+
+#------------------------------------------------------------------------------------------------------------------------
 print(logging.DEBUG)     #10
 print(logging.INFO)      #20
 print(logging.WARNING)   #30
@@ -15,8 +17,7 @@ logging.warning('This is a warning message')    #2024-10-29 14:06:39,854:root:WA
 logging.error('This is an error message')       #2024-10-29 14:06:39,854:root:ERROR:This is an error message
 logging.critical('This is a critical message')  #2024-10-29 14:06:39,854:root:CRITICAL:This is a critical message
 logging.fatal('This is a fatal message')        #2024-10-29 14:06:39,855:root:CRITICAL:This is a fatal message
-
-------------------------------------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------------------------------------
 logging.getLogger()
 logging.getLogger().setLevel()
 logging.getLogger().addHandler()
@@ -54,7 +55,7 @@ stream_handler.setFormatter(formatter)
 
 logger.addHandler(file_handler)
 logger.addHandler(stream_handler)
-------------------------------------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------------------------------------
 
     
 
