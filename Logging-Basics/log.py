@@ -50,6 +50,3 @@ logging.debug('Mul: {} * {} = {}'.format(num_1, num_2, mul_result))   #This wont
 logging.debug('Div: {} / {} = {}'.format(num_1, num_2, div_result))   #This wont be printed as default is WARNING
 
 
-div_result = divide(num_1, num_2)
-logging.debug('Div: {} / {} = {}'.format(num_1, num_2, div_result))
-#---------------------------------------------------------------------------------------------------------------------------------
