@@ -1,4 +1,4 @@
-#---------------------------------------------------------------------------
+
 import logging
 import employee
 
@@ -57,4 +57,4 @@ logger.debug('Mul: {} * {} = {}'.format(num_1, num_2, mul_result))
 
 div_result = divide(num_1, num_2)
 logger.debug('Div: {} / {} = {}'.format(num_1, num_2, div_result))
-#---------------------------------------------------------------------------
+
