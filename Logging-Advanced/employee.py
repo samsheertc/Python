@@ -1,4 +1,4 @@
-#---------------------------------------------------------------------------
+
 import logging
 
 logger = logging.getLogger(__name__)
@@ -33,4 +33,3 @@ class Employee:
 emp_1 = Employee('John', 'Smith')
 emp_2 = Employee('Corey', 'Schafer')
 emp_3 = Employee('Jane', 'Doe')
-#---------------------------------------------------------------------------
