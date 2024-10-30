@@ -1,20 +1,5 @@
 import logging
 
-#To log DEBUG/INFO
-logging.basicConfig(level=logging.DEBUG)
-
-#create log file
-logging.basicConfig(filename='test.log', level=logging.DEBUG)
-
-#Level values in numbers
-#logging.DEBUG    = 10
-#logging.INFO     = 20
-#logging.WARNING  = 30
-#logging.ERROR    = 40
-#logging.CRITICAL = 50
-
-#add log record attributes
-#https://docs.python.org/3/library/logging.html#logrecord-attributes
 logging.basicConfig(filename='test.log', level=logging.DEBUG,
                     format='%(asctime)s:%(levelname)s:%(message)s')
 def add(x, y):
